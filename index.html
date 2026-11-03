@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CDStudios.com</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- ===== Fixed layers (stay in place while the sections scroll) ===== -->
+    <img class="image-background" src="Website Background.png" alt="">
+
+    <div class="disc">
+        <img class="disc-img" src="Disk Image.png" alt="">
+
+        <!-- Photos fade in on the About section.-->
+        <div class="disc-photos">
+            <!--
+                Add each as an image using the matching class:
+                photo-top, photo-left, photo-center, photo-right, photo-bottom.
+            -->
+            <img class="photo-center" src="Website Portrait Photo Middle.png" alt="Photo Charlie Middle">
+            <img class="photo-top" src="Website Portrait Photo Top.png" alt="Photo Charlie Top">
+            <img class="photo-left" src="Website Portrait Photo Left.png" alt="Photo Charlie Left">
+            <img class="photo-right" src="Website Portrait Photo Right.png" alt="Photo Charlie Right">
+            <img class="photo-bottom" src="Website Portrait Photo Bottom.png" alt="Photo Charlie Bottom">
+        </div>
+        <img class="image-logo" src="Logo Transparent BG.png" alt="Logo">
+    </div>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ===== Scrolling sections ===== -->
+    <main>
+
+        <section id="home" class="section">
+            <!-- Nothing here: the disc and logo are the home screen -->
+        </section>
+
+        <section id="about" class="section section-about">
+            <div class="about-layout">
+
+                <div class="box">
+                    <h2 class="title-pill-box">Personal Info</h2>
+                    <p>Hi, my name is Charlie (some may know me as Darwin online) and I am 17 years old. I love games, from video games to board and card games. The game I have the most hours in is Overwatch with around 500 and counting. I've played Overwatch for so many hours because it's the perfect mix of responsive gameplay and teamwork that I struggle to find in the same way in some other games. I much prefer playing with my friends and my cousin than I do alone.</p>
+                    <p>I've always had a passion for programming ever since I first touched Python back before I did my computing GCSE, which has inspired me to want to pursue it as a career. What better way to combine two of my interests than games programming.</p>
+                </div>
+
+                <!-- The middle column is left empty on purpose: the fixed disc sits there -->
+
+                <div class="side-column">
+                    <div class="box">
+                        <h2 class="title-pill-box">Education</h2>
+                        <p>King's Academy Binfield (September 2020 - June 2025):<br>
+                        GCSEs: Maths - 7, Computer Science - 7, Geography - 7, English Language - 6, Physics - 6, Biology - 6, Chemistry - 6, Spanish - 6, English Literature - 5, Design and Technology - 5</p>
+                        <p>Farnborough College of Technology (September 2025 - June 2027):<br>
+                        Year 1 Level 3 Games Development - Distinction</p>
+                    </div>
+
+                    <div class="box">
+                        <h2 class="title-pill-box">Interests</h2>
+                        <ul>
+                            <li>Metal and Kpop</li>
+                            <li>Horror, Thriller and Comedy Movies</li>
+                            <li>Anime</li>
+                            <li>Escape Rooms (30 escaped, more to come)</li>
+                            <li>Playing guitar</li>
+                            <li>Travel (Nowhere near enough (yet))</li>
+                            <li>Gaming (duh)</li>
+                            <li>Gunpla</li>
+                            <li>Magic the Gathering</li>
+                            <li>Theme parks</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="projects" class="section section-projects">
+            <div class="projects-content">
+                <h2 class="title-pill-box">Projects</h2>
+                <div class="project-grid">
+                    <!--
+                        Copy this card for each project. Replace the link, image,
+                        alternative text, and title.
+                        <a class="project-box" href="project-link.html">
+                            <img src="project-image.png" alt="Describe the project">
+                            <span class="project-box-title">Project title</span>
+                        </a>
+                    -->
+                    
+                    <a class="project-box" href="https://www.canva.com/design/DAG_-od-3_Y/1qSofHRXl-kl4PWH1GQt-g/view">
+                        <img src="A1 Cover Image.png" alt="A1 Games Design Portfolio">
+                        <span class="project-box-title">A1 Games Design Portfolio</span>
+                    </a>
+
+                    <a class="project-box" href="https://www.canva.com/design/DAHAd8NKn_c/920NdO_lSqLN_SUUn_pmZg/view">
+                        <img src="A2 Cover Image.png" alt="A2 Games Design Portfolio">
+                        <span class="project-box-title">A2 Games Design Portfolio</span>
+                    </a>
+
+                    <a class="project-box" href="https://github.com/S4BRDarwin/Medieval-Combat-Game">
+                        <img src="Medieval Combat Game.png" alt="Medieval Combat Game">
+                        <span class="project-box-title">Medieval Combat Game</span>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section section-contact">
+            <div class="box">
+                <h2 class="title-pill-box">Contact</h2>
+                <p>Contact details coming soon.</p>
+            </div>
+        </section>
+
+    </main>
+</body>
+</html>
