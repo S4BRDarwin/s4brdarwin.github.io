@@ -36,13 +36,13 @@
 }
 
 :root {
-    --disc-size: 864px;             /* disc size, used by the disc and the About layout */
-    --header-height: 7rem;          /* space kept clear for the fixed menu */
+    --disc-size: 864px;
+    --header-height: 7rem;
 }
 
 html {
     scrollbar-gutter: stable;
-    scroll-behavior: smooth;        /* menu clicks glide instead of jumping */
+    scroll-behavior: smooth;
 }
 
 body {
@@ -57,7 +57,7 @@ body {
    Stuff on every page
    ===================================================== */
 
-/* --- Background texture --- */
+/*  Background texture  */
 .image-background {
     position: fixed;
     inset: 0;
@@ -67,7 +67,7 @@ body {
     object-fit: cover;
 }
 
-/* --- The disc (one disc for the whole site) --- */
+/*  The disc  */
 .disc {
     position: fixed;
     inset: 0;
@@ -75,7 +75,7 @@ body {
     width: var(--disc-size);
     height: var(--disc-size);
     margin: auto;
-    pointer-events: none; /* clicks and scrolling pass straight through */
+    pointer-events: none;
 }
 
 .disc-img,
@@ -96,7 +96,7 @@ body {
     }
 }
 
-/* --- Logo (home section only) --- */
+/*  Logo  */
 .image-logo {
     position: fixed;
     inset: -16px 0 0 6px;
@@ -107,7 +107,7 @@ body {
     pointer-events: none;
 }
 
-/* --- Menu --- */
+/*  Menu  */
 header {
     position: fixed;
     inset: 0 0 auto;
@@ -130,16 +130,16 @@ nav a {
 }
 
 nav a:hover {
-    color: #E61717;   /* hover colour, and the section you're currently on */
+    color: #E61717;
 }
 
 /* =====================================================
    Stuff on multiple pages
    ===================================================== */
-/* Every section fills the screen */
+
 .section {
     position: relative;
-    z-index: 2; /* above the disc, so boxes are never covered by it */
+    z-index: 2;
     display: flex;
     min-height: 100vh;
     padding: var(--header-height) 40px;
@@ -147,7 +147,6 @@ nav a:hover {
     justify-content: center;
 }
 
-/* Content boxes stay visible; the script only handles scrolling and disc rotation. */
 .box {
     padding: 24px;
     border: 1px solid #555;
@@ -171,7 +170,6 @@ nav a:hover {
    About Section
    ===================================================== */
 
-   /* Left box | empty gap for the disc | right boxes */
 .about-page .about-layout {
     position: relative;
     z-index: 2;
@@ -234,12 +232,10 @@ nav a:hover {
     display: list-item;
 }
 
-/* Photos on the disc: they live inside the fixed disc but only show
-   while you're on the About section */
 .disc-photos {
     position: absolute;
     inset: 0;
-    z-index: 3; /* Keep portraits above the centered logo */
+    z-index: 3;
 }
 
 @supports (animation-timeline: view()) {
