@@ -238,13 +238,11 @@ nav a:hover {
     z-index: 3;
 }
 
-@supports (animation-timeline: view()) {
-    .disc-photos {
-        opacity: 1;
-        animation: fade-photos 1s linear both;
-        animation-timeline: --about-section;
-        animation-range: entry 0% exit 100%;
-    }
+.disc-photos {
+    opacity: 1;
+    animation: fade-photos 1s linear both;
+    animation-timeline: --about-section;
+    animation-range: entry 0% exit 100%;
 }
 
 @keyframes fade-photos {
